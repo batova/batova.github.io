@@ -24,36 +24,35 @@ text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3p
 <script>
 function func(){
 st='<h1 class="elegantshadow">'
-n=document.getElementById("a_znach").value;
-y=n
-x=n%10
-a=(n-x)/10
-n=100*x+a
-document.getElementById("a").innerHTML =st+"2.25= "+ n+"</h1>";
+l=document.getElementById("a_znach").value;
+y=l
+x=l%10
+a=(l-x)/10
+l=100*x+a
+document.getElementById("a").innerHTML =st+"2.25= "+ l+"</h1>";
 x=(y-y%100)/100
 a=y%100
-n=10*a+x
-document.getElementById("b").innerHTML =st+"2.27= "+ n+"</h1>";
+l=10*a+x
+document.getElementById("b").innerHTML =st+"2.27= "+ l+"</h1>";
 x=((y-y%100)/10+y%10)
-n=10*x+(y%100-y%10)/10
-document.getElementById("c").innerHTML =st+"2.29= "+ n+"</h1>";
+l=10*x+(y%100-y%10)/10
+document.getElementById("c").innerHTML =st+"2.29= "+ l+"</h1>";
 x=((y-y%100)/10+y%10)
-n=(y%100-y%10)*10+x
-document.getElementById("d").innerHTML =st+"2.31= "+ n+"</h1>";
+l=(y%100-y%10)*10+x
+document.getElementById("d").innerHTML =st+"2.31= "+ l+"</h1>";
 x=y%10
 a=(y%100-x)+(y-y%100)/100
-n=100*x+a
-document.getElementById("e").innerHTML =st+"2.33= "+ n+"</h1>";
+l=100*x+a
+document.getElementById("e").innerHTML =st+"2.33= "+ l+"</h1>";
 }
 </script>
 ______________________________________________
 <br>
-2.25
 <br>
-n=<input type="text" value="0" id="a_znach">
+l=<input type="text" value="0" id="a_znach">
 <br>
 <br>
-<button onclick="func()"> knopka </button>
+<button onclick="func()"> knopka20 </button>
 <br>
 <br>
 <div id="a"></div>
