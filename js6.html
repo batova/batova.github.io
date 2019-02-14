@@ -43,6 +43,10 @@ function er1(){
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath();
+  ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
 drawpoint1();
 drawpoint2();
 ctx.stroke();
