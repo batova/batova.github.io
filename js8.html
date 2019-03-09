@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 20;
+      while (i < n) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br>";
+        i++;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 10;
+      while (i < n) {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + "<br>";
+        i++;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+
+  a) n=
+  <input type="text" value="36" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="action-button shadow animate blue"> если </a>
+  <div id="otvet1"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  б) n=
+  <input type="text" value="0" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="action-button shadow animate blue"> хочешь </a>
+  <div id="otvet2"></div>
+
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
